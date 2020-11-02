@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Quiz</title>
+</head>
+<body onLoad="ApplyDefaultQuestionStyles()">
+    <div class="instructions">
+        <h1>HTML Quiz for Beginners</h1>
+
+    </div>
+
+    <form>
+        <div id="1">
+            <p><strong>Question 1</strong></p>
+            <p> Title tag in HTML must be within?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(1, this.value)" name="radiobutton2">Body</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(1, this.value)" name="radiobutton2">Head</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(1, this.value)" name="radiobutton2">Section</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(1, this.value)" name="radiobutton2">Script</p>
+        </div>
+
+        <div id="2">
+            <p><strong>Question 2</strong></p>
+            <p> What is TD tag used for?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(2, this.value)" name="radiobutton2">Table Record</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(2, this.value)" name="radiobutton2">Table Description</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(2, this.value)" name="radiobutton2">Table Row</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(2, this.value)" name="radiobutton2">None of the above</p>
+        </div>
+
+        <div id="3">
+            <p><strong>Question 3</strong></p>
+            <p> What is the order of elements in Margin and Padding?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(3, this.value)" name="radiobutton2">Top Bottom Left Right</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(3, this.value)" name="radiobutton2">Top Left Right Bottom</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(3, this.value)" name="radiobutton2">Top Right Bottom Left</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(3, this.value)" name="radiobutton2">Right Left Top Bottom </p>
+        </div>
+
+        <div id="4">
+            <p><strong>Question 4</strong></p>
+            <p>  Which unit gives measures relative to text?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(4, this.value)" name="radiobutton2">Pixels</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(4, this.value)" name="radiobutton2">em</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(4, this.value)" name="radiobutton2">percentage</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(4, this.value)" name="radiobutton2">None of the above</p>
+        </div>
+
+        <div id="5">
+            <p><strong>Question 5</strong></p>
+            <p> Which tag is used to draw horizontal lines in a webpage?</p>
+            <p><input type="radio" value="A" onClick="SetAnswer(5, this.value)" name="radiobutton2">br</p>
+            <p><input type="radio" value="B" onClick="SetAnswer(5, this.value)" name="radiobutton2">vr</p>
+            <p><input type="radio" value="C" onClick="SetAnswer(5, this.value)" name="radiobutton2">Line</p>
+            <p><input type="radio" value="D" onClick="SetAnswer(5, this.value)" name="radiobutton2">hr</p>
+        </div>
+        <p>
+
+
+
+        <input type="submit" class="ui-button" onClick="CheckQuiz()" value="Submit Answers" name="submitButton" class="button"></p>
+
+
+    </form>
+    <script src="js.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
